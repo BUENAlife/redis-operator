@@ -11,7 +11,7 @@ spec:
       limits:
         memory: 100Mi
     nodeSelector:
-      cloud.google.com/gke-nodepool: default-pool
+      cloud.google.com/gke-nodepool: default-preempt-pool
   redis:
     replicas: 3
     resources:
@@ -22,4 +22,4 @@ spec:
         cpu: 400m
         memory: 500Mi
     nodeSelector:
-      cloud.google.com/gke-nodepool: default-pool
+      cloud.google.com/gke-nodepool: default-preempt-pool
